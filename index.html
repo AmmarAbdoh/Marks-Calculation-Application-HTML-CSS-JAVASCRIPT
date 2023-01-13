@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Style.css" type="text/css">
+    <script src = "JS.js"></script>
+    <title>Mark</title>
+</head>
+<body>
+    <audio id="audio" autoplay loop>
+        <source id="audioSource" src="birds.mp3" type="audio/mpeg">
+        <alert>Your browser does not support the audio element.</alert>
+    </audio>
+    <div id="info">
+        <form id="form_1">
+            <label>Student Name</label> <br>
+            <input class="greyBorder" type="text" id="student_name" name="student_name" placeholder="" autocomplete="off" required>
+            <label id="nameStar" class="star"></label> <br>
+            <label id="nameMessage" class="star">&nbsp;</label>
+            <hr><br>
+
+
+            <label>Marks</label> 
+                <div id="marks">
+                    
+                    <span class="mark" >
+                        <p>First Exam (20%)</p>
+                        <input class="greyBorder" type="text" id="first_exam" name="first_exam" placeholder="0" autocomplete="off" required> 
+                        <label id="firstStar" class="star"></label> 
+                        <br> 
+                        <label id="firstMessage" class="star">&nbsp;</label>
+                    </span>
+
+                    <span class="mark">
+                        <p>Second Exam (20%)</p> 
+                        <input class="greyBorder" type="text" id="second_exam" name="student_name" placeholder="0" autocomplete="off" required> 
+                        <label id="secondStar" class="star"></label>  
+                        <br> 
+                        <label id="secondMessage" class="star">&nbsp;</label>
+                    </span>
+
+                    <span class="mark">
+                        <p>Final Exam (50%)</p> 
+                        <input class="greyBorder" type="text" id="final_exam" name="final_exam" placeholder="0" autocomplete="off" required> 
+                        <label id="finalStar" class="star"></label> 
+                        <br> 
+                        <label id="finalMessage" class="star">&nbsp;</label> 
+                    </span>
+
+
+                    <span class="mark">
+                        <p>Participation</p> 
+                        <input class="greyBorder" style="margin-bottom: 20px;" min="0" max="10" type="number" value="0" id="participation" name="student_name" autocomplete="off" required> 
+                        <label id="partStar" class="star"></label> 
+                        <br>
+                        <label id="partMessage" class="star">&nbsp;</label> 
+                    </span>
+                </div>
+
+                
+                
+                <label class="abance">Absence</label>    
+                <div id="absence" style="border-style: dashed;">
+                    <input type="radio" id="more7" name="abs" required>
+                    <label>More than 7 absences </label>
+                    <br>
+                    <input type="radio" id="less7" name="abs">
+                    <label>Less or Equal 7 absences </label>
+                </div>
+
+                
+
+                <div id="submt">
+                    <input id="sub" type="button" class="button" value="Calculate">
+                    <input id="showAll" type="button" class="button" value="Show All">
+                </div>
+
+                <div class="result" id="resDiv">
+                    <span id="result">
+                        <p id="resName">Name : </p>
+                        <p id="totalres">Total : </p>
+                        <p id="graderes">Grade : </p>
+                    </span>
+                </div>
+                <label id="resMsg"></label>
+
+        </form>
+        
+        <div id="resTable" style="display: inline-block">
+            <table id = "tab" border="1" style="display: none">
+                <tr>
+                    <th rowspan="2">Student Name</th>
+                    <th colspan="5">Marks</th>
+                    <th rowspan="2">Grade</th>
+                </tr>
+    
+                <tr>
+                    <th>First</th>
+                    <th>Second</th>
+                    <th>Final</th>
+                    <th>Participation</th>
+                    <th>Absences</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

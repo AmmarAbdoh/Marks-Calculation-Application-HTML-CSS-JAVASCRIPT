@@ -1,0 +1,120 @@
+body
+{
+    background-color: darkgray;
+}
+#form_1
+{
+    margin-left:80px;
+    margin-top:80px;
+    border-style: double;
+    padding:50px;
+    background-color: whitesmoke;
+    max-width:60%;
+    min-width:800px;
+}
+
+#resTable
+{
+    margin-top:50px;
+    margin-bottom: 100px;
+    margin-left : 20%;
+}
+
+#tab
+{
+    border: 1px solid red;
+    border-collapse: collapse;
+    width: 200px;
+}
+
+th
+{
+    color : yellow;
+    background-color: blue;
+    padding:5px;
+}
+
+td
+{
+    color : white;
+    background-color: blue;
+    padding:5px;
+}
+
+#marks
+{
+    margin-bottom: 30px;
+    border-style: dashed;
+    background-color: white;
+    padding: 20px;
+    width: 55%;
+}
+
+#absence
+{
+    padding: 20px;
+    padding-right:0px;
+    margin: 20px;
+    margin-left: 0px;
+    margin-top: 5px;
+    width: 57.3%;
+    background-color: white;
+}
+.abance {
+    display: block;
+}
+
+#resDiv
+{
+    display: inline-block;
+}
+.result {
+    display: inline-block;
+    border-style: solid;
+    width: 35%;
+    margin-left:250px;
+    background-color: white;
+}
+#result
+{
+    display: inline-block;
+    padding: 20px;
+}
+
+#submt
+{
+    display: inline-block;
+}
+
+.mark
+{
+    width: 120px;
+    margin-right: 30px;
+    display: inline;
+}
+.button
+{
+    background-color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 28px;
+}
+
+.star
+{
+    color:red;
+    font-weight: bold;
+}
+
+.greyBorder
+{
+    border-color:grey;
+}
+
+#resMsg
+{
+    color:red;
+    margin-left:498px;
+    display: inline-block;
+    font-weight: bolder;
+}
